@@ -1,0 +1,101 @@
+
+/* 
+
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
+body{
+    margin-top: 200px;
+    background-color: lightblue;
+}
+
+.container {
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    width: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 40px;
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+    padding-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+input {
+    border: none;
+    width: 100%;
+    
+}
+
+ul li {
+    border: 1px solid lightblue;
+    border-bottom: none;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li:first-child {
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid purple;
+}
+
+ul li:last-child {
+    border-bottom: 1px solid lightblue;
+}
+
+ul li:first-child:hover {
+    background-color: white;
+    box-shadow: 2px 0px 10px;
+}
+
+ul li:hover {
+    box-shadow: 2px 0px 10px;
+}
+
+.counter {
+    color: gray;
+    font-style: italic;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.icon {
+    color: grey;
+}
+
+.icon:hover {
+    color: rgba(255, 0, 0, 0.493);
+}
+
+.check {
+    text-decoration: line-through;
+}
+
+#notChecked {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 90%;
+    }
+}
